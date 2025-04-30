@@ -1,0 +1,386 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import FAQs from '~/components/widgets/FAQs.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import Features from '~/components/widgets/Features.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
+// import Stats from '~/components/widgets/Stats.astro';
+// import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Acertain Group',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact Us  ',
+        href: 'mailto:help@acertaingroup.com',
+        icon: 'tabler:mail',
+      }
+    ]}
+    image={{ src: 'https://images.unsplash.com/photo-1508095498585-d631b9392135?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+      Driving Lasting Transformation
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      At Acertain Group, we guide organizations through change with a grounded, authentic approach that empowers employees to engage, adapt and sustain success well beyond launch.
+    </Fragment>
+  </Hero>
+
+  <!-- Features Widget *************** -->
+<!-- 
+  <Features
+    id="features"
+    tagline="Features"
+    title="What you get with AstroWind"
+    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    items={[
+      {
+        title: 'Astro + Tailwind CSS Integration',
+        description:
+          '<ul><li>Understand your stakeholders &dash; and what they need to succeed</li><li>Define a clear, shared vision that anchors the change &dash; and ensure leaders are aligned behind it</li><li> Embed change management from the start &dash; and sustain it throughout</li></ul>',
+        icon: 'tabler:brand-tailwind',
+      },
+      {
+        title: 'Ready-to-use Components',
+        description:
+          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+        icon: 'tabler:components',
+      },
+      {
+        title: 'Best Practices',
+        description:
+          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Excellent Page Speed',
+        description:
+          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Search Engine Optimization (SEO)',
+        description:
+          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+        icon: 'tabler:arrows-right-left',
+      },
+      {
+        title: 'Open to new ideas and contributions',
+        description:
+          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+        icon: 'tabler:bulb',
+      },
+    ]}
+  /> -->
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="WhoWeAre"
+    isReversed
+    tagline=""
+    title="Who We Are"
+    items={[
+      {
+        title: 'Our approach is different',
+        description:
+          'We don’t just advise &dash; we integrate with your team and deliver practical, honest guidance that moves people and projects forward.',
+      },
+      {
+        title: 'Clients often tell us, "You just get it."',
+        description:
+          'That’s because we listen closely, adapt in real time, and ensure leaders and employees feel heard, aligned, and equipped to succeed.',
+      },
+      {
+        title: 'At Scale',
+        description:
+          'If you\'re navigating large-scale change and need more than just a plan &dash; if you need a true partner to build momentum, bridge gaps, and connect with your people &dash; let’s talk.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=1200&auto=format&fit=crop&&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGVhZGVyc2hpcHxlbnwwfHwwfHx8Mg%3D%3D',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
+      With an average of over 25 years' experience, our consultants are seasoned transformation experts and know what it takes to turn change into lasting impact.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    id="OurServices"
+    title="Our Services"
+    items={[
+      {
+        title: 'Leadership Alignment & Strategy',
+        description: `We help leadership teams build a strong foundation for change through strategic planning sessions, development of guiding principles, and tailored coaching.`,
+      },
+      {
+        title: 'Stakeholder Engagement',
+        description:
+          'Our approach strengthens connections across the organization by identifying key stakeholders, executing targeted engagement strategies, and fostering trust through continuous feedback.',
+      },
+      {
+        title: 'Communication Planning & Execution',
+        description:
+          "We create and deliver clear, audience-specific communication strategies that drive understanding, alignment, and action throughout the change process.",
+      }
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1492366254240-43affaefc3e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGVhZGVyc2hpcHxlbnwwfHwwfHx8Mg%3D%3D',
+      alt: 'Crew Image',
+    }}
+  >
+    <Fragment slot="content">Our services are designed to support both leadership and employees throughout the change journey&dash;ensuring solutions are not only implemented, but embraced.</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'Employee Experience & Listening',
+        description:
+          'We amplify employee voices through surveys, focus groups, and interviews, turning insights into actionable plans that improve engagement and adoption.',
+      },
+      {
+        title: 'Organizational Design & Implementation',
+        description:
+          'We support organizational transitions by aligning structures and roles, planning workforce impacts, and ensuring integration with broader initiatives.',
+      },
+      {
+        title: 'Change Enablement for Projects & Systems',
+        description:
+          'We accelerate change adoption for new technologies and systems through tailored strategies, training programs, and readiness support to ensure smooth go-lives.',
+      },
+      {
+        title: 'And More!',
+        description:
+          '',
+      }
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHBhcnRuZXJzaGlwfGVufDB8fDB8fHwy',
+      alt: 'Point At Computer Image',
+    }}
+  >
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="GettingStarted"
+    title="Getting Started"
+    subtitle="Successful change isn’t an accident – it is built on simple, powerful principles like these (just a few to get you started):"
+    items={[
+      {
+        title: 'Plan Early and Strategically',
+        description:
+          "<ul><li>Define a clear, shared vision that anchors the change &dash; and ensure leaders are aligned behind it</li><li>Understand your stakeholders &dash; know their concerns and what they need to succeed.</li></ul>",
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Engage and Communicate Constantly',
+        description:
+          "<ul><li>Embed change management from the start &dash; Change efforts begin when aligning leaders at planning, and continues after 'launch'</li><li>Start messaging early and avoid surprises &dash; no one should be hearing about the change just before go-live (or worse, at go-live)</li></ul",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Anticipate Disruption and Lead Through It',
+        description:
+          '<ul><li>Expect disruption &dash; navigate with resilience. (You know what they say &dash; the best laid plans...)</li><li> Involve Frontline Perspectives - Engage with team members who will be directly affected to uncover potential challenges and tailor your approach</li></ul>',
+        icon: 'tabler:paint',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  />
+ <!-- Note Widget ******************* -->
+
+ <Note title="Philosophy:" description="Building trust. Driving momentum. Creating lasting change." />
+  <!-- Features2 Widget ************** -->
+<!-- 
+  <Features2
+    title="Most used widgets"
+    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    tagline="Components"
+    items={[
+      {
+        title: 'Headers',
+        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Heros',
+        description:
+          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'Features',
+        description:
+          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Content',
+        description:
+          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Call-to-Action',
+        description:
+          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Pricing',
+        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Testimonial',
+        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Contact',
+        description:
+          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        icon: 'flat-color-icons:business-contact',
+      },
+      {
+        title: 'Footers',
+        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        icon: 'flat-color-icons:database',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2> -->
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <!-- <BlogLatestPosts
+    title="Find out more content in our Blog"
+    information={`The blog is used to display AstroWind documentation.
+                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
+                        Astro is a very interesting technology. Thanks.
+                `}
+  /> -->
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"    
+    tagline="FAQs"
+    id="FAQ"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Will our people actually adopt the change?',
+        description:
+          " Absolutely &dash; but it takes more than just communication. We build real ownership by embedding change agents, tailoring engagement, and helping leaders model the change from the top down.",
+      },
+      {
+        title: 'How do we avoid dips in productivity and service delivery during the transition?',
+        description:
+          'Change doesn’t have to mean chaos. With a phased roadmap, smart risk management, and real-time adjustments, we help you keep &dash; and possibly even boost &dash; productivity and service levels throughout the transition.',
+      },
+      {
+        title: 'We’ve tried this before and it didn’t stick. Why will this be different?',
+        description:
+          'That <i>“this too shall pass” </i>  &nbsp;feeling is real &dash; and we get it. We start by understanding your culture and readiness, anchor everything in measurable behavior change, and track real progress. Plus, we recommend staying engaged after launch to lock in the wins and prevent backsliding.',
+      },
+      {
+        title: "How do we communicate this without causing fear or confusion?",
+        description:
+          "Good communication isn’t just about talking &dash; it’s about connecting. We help leaders deliver clear, empathetic messages that balance transparency with vision, and we make sure there’s space for two-way conversations along the way.",
+      },
+      {
+        title: 'What is something that you would like to try again?',
+        description:
+          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+      },
+      {
+        title: 'Do we even have the internal capacity to do this right?',
+        description:
+          "You don’t have to do it alone. We bring the experience, the people, and the framework to lead change &dash; while empowering your internal teams so they’re stronger and more capable long after the project ends.",
+      },
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+<!-- 
+  <Stats
+    stats={[
+      { title: 'Downloads', amount: '132K' },
+      { title: 'Stars', amount: '24.8K' },
+      { title: 'Forks', amount: '10.3K' },
+      { title: 'Users', amount: '48.4K' },
+    ]}
+  /> -->
+
+  <!-- CallToAction Widget *********** -->
+
+  <!-- <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get template',
+        href: 'https://github.com/onwidget/astrowind',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      waste more time! :P
+    </Fragment>
+  </CallToAction> -->
+</Layout>
