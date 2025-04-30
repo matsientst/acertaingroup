@@ -23,6 +23,8 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
+  site: 'https://matsientst.github.io',
+  base: '/acertaingroup',
 
   integrations: [
     tailwind({
