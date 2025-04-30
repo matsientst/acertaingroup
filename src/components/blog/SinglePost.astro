@@ -6,8 +6,6 @@ import PostTags from '~/components/blog/Tags.astro';
 import Author from '~/components/blog/Author.astro';
 import SocialShare from '~/components/common/SocialShare.astro';
 
-
-
 import { getPermalink } from '~/utils/permalinks';
 import { getFormattedDate } from '~/utils/utils';
 
@@ -99,7 +97,7 @@ const { post, url } = Astro.props;
       <slot />
     </div>
     <div class="mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">
-      <Author author={post.author} detailed/>
+      <Author author={post.author} detailed />
     </div>
     <div class="mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">
       <PostTags tags={post.tags} class="mr-5 rtl:mr-0 rtl:ml-5" />

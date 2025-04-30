@@ -117,21 +117,20 @@ export const headerData = {
     // },
     {
       text: 'Who We Are',
-      href: '#WhoWeAre'
+      href: '#WhoWeAre',
     },
     {
       text: 'Our Services',
-      href: '#OurServices'
+      href: '#OurServices',
     },
     {
       text: 'Getting Started',
-      href: '#GettingStarted'
+      href: '#GettingStarted',
     },
     {
-      text: 'FAQ\'s',
-      href: '#FAQ'
-    }
-    
+      text: "FAQ's",
+      href: '#FAQ',
+    },
   ],
   actions: [{ text: 'Contact Us  ', href: 'mailto:help@acertaingroup.com', icon: 'tabler:mail' }],
 };

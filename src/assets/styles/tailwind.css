@@ -20,7 +20,7 @@
   }
   .clear-ul {
     list-style: none;
-    padding:0;
+    padding: 0;
   }
   .clear-li {
     padding-bottom: 0;
@@ -74,7 +74,6 @@
   @apply clear-ul clear-li;
 }
 
-
 .dropdown:focus .dropdown-menu,
 .dropdown:focus-within .dropdown-menu,
 .dropdown:hover .dropdown-menu {
@@ -107,7 +106,7 @@
 }
 
 ul {
-  list-style: disc ;
+  list-style: disc;
   padding: revert;
   li {
     color: var(--aw-color-text-muted);
