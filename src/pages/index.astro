@@ -12,7 +12,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 // import Features from '~/components/widgets/Features.astro';
 // import Features2 from '~/components/widgets/Features2.astro';
 // import Stats from '~/components/widgets/Stats.astro';
-// import CallToAction from '~/components/widgets/CallToAction.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Acertain Group',
@@ -123,7 +123,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      With an average of over 25 years' experience, our consultants are seasoned transformation experts and know what it
+      With an average of over 25 years experience, our consultants are seasoned transformation experts and know what it
       takes to turn change into lasting impact.
     </Fragment>
 
@@ -317,7 +317,6 @@ const metadata = {
 
   <FAQs
     title="Frequently Asked Questions"
-    tagline="FAQs"
     id="FAQ"
     classes={{ container: 'max-w-6xl' }}
     items={[
@@ -342,15 +341,15 @@ const metadata = {
           'Good communication isn’t just about talking &dash; it’s about connecting. We help leaders deliver clear, empathetic messages that balance transparency with vision, and we make sure there’s space for two-way conversations along the way.',
       },
       {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
         title: 'Do we even have the internal capacity to do this right?',
         description:
           'You don’t have to do it alone. We bring the experience, the people, and the framework to lead change &dash; while empowering your internal teams so they’re stronger and more capable long after the project ends.',
       },
+      {
+        title: 'How do we get started?',
+        description:
+          "Reach out and let's discuss it. There's a myriad of ways to get launched quickly and effectively.",
+      }
     ]}
   />
 
@@ -367,24 +366,24 @@ const metadata = {
 
   <!-- CallToAction Widget *********** -->
 
-  <!-- <CallToAction
+   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Email Us',
+        href: 'mailto:help@acertaingroup.com',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:mail',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Acertain Group
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      At Acertain Group, we turn strategy into action by working side-by-side with your team to build trust, overcome resistance, and deliver sustainable change.
+We can help. Just reach out.
     </Fragment>
-  </CallToAction> -->
+  </CallToAction> 
 </Layout>
