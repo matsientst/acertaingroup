@@ -128,7 +128,7 @@ export const headerData = {
       href: '#GettingStarted',
     },
     {
-      text: "FAQ's",
+      text: "FAQs",
       href: '#FAQ',
     },
   ],
