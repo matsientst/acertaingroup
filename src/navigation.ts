@@ -1,4 +1,5 @@
 import { getPermalink, getAsset } from './utils/permalinks';
+import { SITE } from 'astrowind:config';
 //import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
@@ -117,22 +118,22 @@ export const headerData = {
     // },
     {
       text: 'Who We Are',
-      href: '#WhoWeAre',
+      href: SITE.site + '#WhoWeAre',
     },
     {
       text: 'Our Services',
-      href: '#OurServices',
+      href: SITE.site + '#OurServices',
     },
     {
       text: 'Getting Started',
-      href: '#GettingStarted',
+      href: SITE.site + '#GettingStarted',
     },
     {
       text: "FAQs",
-      href: '#FAQ',
+      href: SITE.site + '#FAQ',
     },
   ],
-  actions: [{ text: 'Contact Us  ', href: '/contact', icon: 'tabler:mail' }],
+  actions: [{ text: 'Contact Us  ', href: SITE.site + '/contact', icon: 'tabler:mail' }],
 };
 
 export const footerData = {
