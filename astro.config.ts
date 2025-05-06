@@ -15,9 +15,8 @@ import astrowind from './vendor/integration';
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehypePlugin } from './src/utils/frontmatter';
 
-import webmanifest from 'astro-webmanifest';
-
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 
 const hasExternalScripts = false;
 const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroIntegration)[] = []) =>
@@ -62,9 +61,6 @@ export default defineConfig({
     Logger: 1,
   }), astrowind({
     config: './src/config.yaml',
-  }), webmanifest({
-    name: 'Acertain Group',
-    icon: 'src/assets/favicons/favicon.svg'
   })],
 
   image: {

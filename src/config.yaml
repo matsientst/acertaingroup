@@ -11,7 +11,7 @@ metadata:
   title:
     default: Acertain Group
     template: '%s — Acertain Group'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 At Acertain Group, we turn strategy into action by working side-by-side with your team to build trust, overcome resistance, and deliver sustainable change. We can help. Just reach out."
   robots:
     index: true
     follow: true
