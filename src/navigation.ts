@@ -132,7 +132,7 @@ export const headerData = {
       href: '#FAQ',
     },
   ],
-  actions: [{ text: 'Contact Us  ', href: 'mailto:help@acertaingroup.com', icon: 'tabler:mail' }],
+  actions: [{ text: 'Contact Us  ', href: '/contact', icon: 'tabler:mail' }],
 };
 
 export const footerData = {
